@@ -1,0 +1,55 @@
+{
+  "name": "codexpert/tests",
+  "description": "Collection of utility PHP unit testing",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tajul Asri",
+      "email": "tajulasri@codexpert.my"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Codexpert\\": "src/"
+    }
+  },
+    "autoload-dev": {
+        "psr-4": {
+            "Codexpert\\Tests\\": "tests"
+        }
+    },
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "laravie/codex": "^5.1",
+    "php-http/multipart-stream-builder": "^1.0"
+  },
+  "require-dev": {
+    "guzzlehttp/guzzle": "^7.4",
+    "laravie/codex-common": "^1.5",
+    "laravie/parser": "^2.0",
+    "mockery/mockery": "^1.3",
+    "php-http/guzzle7-adapter": "^0.1.1",
+    "phpstan/phpstan": "^1.3",
+    "phpunit/phpunit": "^7.5 || ^8.4 || ^9.0"
+  },
+  "suggest": {
+    
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit -c ./"
+    ],
+    "phpstan": [
+      "vendor/bin/phpstan analyse src tests"
+    ]
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
