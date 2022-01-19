@@ -7,7 +7,7 @@ This package is used to packaging collection of utility for unit testing in PHP
 You can install the package via composer:
 
 ```bash
-composer require codexpert/tests 
+composer require codexpertmy/tests 
 ```
 
 ### Usage basic
